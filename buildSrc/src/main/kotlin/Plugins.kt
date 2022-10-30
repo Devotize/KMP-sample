@@ -8,4 +8,5 @@ object Plugins {
 
     const val jvm = "jvm"
     const val compose = "org.jetbrains.compose"
+    const val kotlinXSerialization = "plugin.serialization"
 }

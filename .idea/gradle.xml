@@ -11,11 +11,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/FeatureBackendApi" />
             <option value="$PROJECT_DIR$/androidApp" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/desktopApp" />
             <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/buildModules/core" />
+            <option value="$PROJECT_DIR$/shared/buildModules/featureBackendApi" />
+            <option value="$PROJECT_DIR$/shared/buildModules/featureBackendImpl" />
           </set>
         </option>
       </GradleProjectSettings>

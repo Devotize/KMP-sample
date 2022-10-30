@@ -13,4 +13,10 @@ object Versions {
     //desktop
     const val composeDesktop = "1.2.0-beta01"
 
+    //shared
+    const val ktor = "2.1.2"
+    const val koin = "3.2.2"
+    const val kotlinSerialization = "1.6.10"
+    const val kotlinxSerialization = "1.4.0"
+
 }

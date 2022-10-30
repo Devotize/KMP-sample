@@ -12,7 +12,7 @@ fun main() = application {
         Box(
             modifier = Modifier.fillMaxSize()
         ) {
-            Text(HelloTest().helloStr)
+            Text("HI")
         }
     }
 }
