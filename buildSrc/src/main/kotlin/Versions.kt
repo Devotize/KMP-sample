@@ -16,6 +16,7 @@ object Versions {
     //shared
     const val ktor = "2.1.2"
     const val koin = "3.2.2"
+    const val coroutines = "1.6.4"
     const val kotlinSerialization = "1.6.10"
     const val kotlinxSerialization = "1.4.0"
 

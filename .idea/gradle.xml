@@ -18,6 +18,8 @@
             <option value="$PROJECT_DIR$/shared/appModules/core" />
             <option value="$PROJECT_DIR$/shared/appModules/featureBackendApi" />
             <option value="$PROJECT_DIR$/shared/appModules/featureBackendImpl" />
+            <option value="$PROJECT_DIR$/shared/appModules/featureNewsApi" />
+            <option value="$PROJECT_DIR$/shared/appModules/featureNewsImpl" />
           </set>
         </option>
       </GradleProjectSettings>

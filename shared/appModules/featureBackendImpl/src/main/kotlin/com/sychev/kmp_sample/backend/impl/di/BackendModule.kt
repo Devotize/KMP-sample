@@ -1,7 +1,7 @@
 package com.sychev.kmp_sample.backend.impl.di
 
 import com.sychev.kmp_sample.backend.api.domain.api.NewsApi
-import com.sychev.kmp_sample.backend.api.repository.NewsRepositoryApi
+import com.sychev.kmp_sample.backend.api.repository.NewsRepository
 import com.sychev.kmp_sample.backend.api.utils.NEWS_API_BASE_URL
 import com.sychev.kmp_sample.backend.api.utils.api_key.newsApiKey
 import com.sychev.kmp_sample.backend.impl.domain.api.NewsImpl
@@ -54,6 +54,6 @@ fun backendModule() = module {
 
     single<NewsApi> { NewsImpl() }
 
-    single<NewsRepositoryApi> { NewsRepositoryImpl(newsApi = get()) }
+    single<NewsRepository> { NewsRepositoryImpl(newsApi = get()) }
 
 }

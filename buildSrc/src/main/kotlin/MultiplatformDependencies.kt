@@ -11,4 +11,7 @@ object MultiplatformDependencies {
     const val ktorOkHttp = "io.ktor:ktor-client-okhttp:${Versions.ktor}"
 
     const val koinCore = "io.insert-koin:koin-core:${Versions.koin}"
+
+    const val coroutinesCore =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
 }
