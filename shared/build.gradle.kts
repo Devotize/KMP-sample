@@ -11,17 +11,18 @@ kotlin {
     android()
     jvm()
 
-    val iosTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget = when {
-        System.getenv("SDK_NAME")?.startsWith("iphoneos") == true -> ::iosArm64
-        System.getenv("NATIVE_kARCH")?.startsWith("arm") == true -> ::iosSimulatorArm64
-        else -> ::iosX64
-    }
-    iosTarget("iOS") {}
+//    val iosTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget = when {
+//        System.getenv("SDK_NAME")?.startsWith("iphoneos") == true -> ::iosArm64
+//        System.getenv("NATIVE_kARCH")?.startsWith("arm") == true -> ::iosSimulatorArm64
+//        else -> ::iosX64
+//    }
+//    iosTarget("iOS") {}
 
     sourceSets {
         val commonMain by getting {
             dependencies {
-
+                api(project(BuildModules.featureBackendApi))
+                implementation(project(BuildModules.featureBackendImpl))
             }
         }
         val commonTest by getting {
@@ -33,9 +34,9 @@ kotlin {
         val jvmMain by getting {
 
         }
-        val iOSMain by getting {
-
-        }
+//        val iOSMain by getting {
+//
+//        }
     }
 
 }

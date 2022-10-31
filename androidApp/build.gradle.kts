@@ -44,10 +44,12 @@ android {
 
 dependencies {
     api(project(BuildModules.shared))
-    api(project(BuildModules.featureBackendApi))
 
     implementation(AndroidDependencies.androidCore)
     implementation(AndroidDependencies.material)
+
+    implementation(AndroidDependencies.koinAndroid)
+    implementation(AndroidDependencies.koinCompose)
 
     implementation(AndroidDependencies.composeUI)
     implementation(AndroidDependencies.composeMaterial)

@@ -11,5 +11,5 @@ compose.desktop {
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    api(project(BuildModules.featureBackendApi))
+    api(project(BuildModules.shared))
 }

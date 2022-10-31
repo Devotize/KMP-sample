@@ -14,9 +14,9 @@ allprojects {
     repositories {
         mavenCentral()
         maven("https://jitpack.io")
-        maven("https://plugins.gradle.org/m2/")
         maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
         google()
+        maven("https://plugins.gradle.org/m2/")
     }
 }
 

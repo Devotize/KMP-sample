@@ -15,9 +15,9 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/desktopApp" />
             <option value="$PROJECT_DIR$/shared" />
-            <option value="$PROJECT_DIR$/shared/buildModules/core" />
-            <option value="$PROJECT_DIR$/shared/buildModules/featureBackendApi" />
-            <option value="$PROJECT_DIR$/shared/buildModules/featureBackendImpl" />
+            <option value="$PROJECT_DIR$/shared/appModules/core" />
+            <option value="$PROJECT_DIR$/shared/appModules/featureBackendApi" />
+            <option value="$PROJECT_DIR$/shared/appModules/featureBackendImpl" />
           </set>
         </option>
       </GradleProjectSettings>

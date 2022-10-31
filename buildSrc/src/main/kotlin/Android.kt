@@ -10,6 +10,8 @@ object AndroidDependencies {
     //core
     const val androidCore = "androidx.core:core-ktx:${Versions.androidCore}"
     const val material = "com.google.android.material:material:${Versions.material}"
+    const val koinAndroid = "io.insert-koin:koin-android:${Versions.koin}"
+    const val koinCompose = "io.insert-koin:koin-androidx-compose:${Versions.koin}"
 
     // compose
     const val composeUI = "androidx.compose.ui:ui:${Versions.compose}"

@@ -8,6 +8,7 @@ object MultiplatformDependencies {
     const val ktorResources = "io.ktor:ktor-client-resources:${Versions.ktor}"
     const val ktorNegotiation = "io.ktor:ktor-client-content-negotiation:${Versions.ktor}"
     const val ktorJson = "io.ktor:ktor-serialization-kotlinx-json:${Versions.ktor}"
+    const val ktorOkHttp = "io.ktor:ktor-client-okhttp:${Versions.ktor}"
 
     const val koinCore = "io.insert-koin:koin-core:${Versions.koin}"
 }
