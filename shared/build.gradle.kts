@@ -21,8 +21,10 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(project(BuildModules.featureBackendApi))
+                api(MultiplatformDependencies.coilCompose)
+
                 implementation(project(BuildModules.featureBackendImpl))
+
                 api(project(BuildModules.featureNewsApi))
                 implementation(project(BuildModules.featureNewsImpl))
             }

@@ -10,6 +10,8 @@ object MultiplatformDependencies {
     const val ktorJson = "io.ktor:ktor-serialization-kotlinx-json:${Versions.ktor}"
     const val ktorOkHttp = "io.ktor:ktor-client-okhttp:${Versions.ktor}"
 
+    const val coilCompose = "io.coil-kt:coil-compose:${Versions.coil}"
+
     const val koinCore = "io.insert-koin:koin-core:${Versions.koin}"
 
     const val coroutinesCore =

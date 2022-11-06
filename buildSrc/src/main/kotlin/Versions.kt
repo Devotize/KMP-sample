@@ -19,5 +19,6 @@ object Versions {
     const val coroutines = "1.6.4"
     const val kotlinSerialization = "1.6.10"
     const val kotlinxSerialization = "1.4.0"
+    const val coil = "2.2.2"
 
 }
