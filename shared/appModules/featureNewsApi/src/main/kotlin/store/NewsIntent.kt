@@ -1,6 +1,6 @@
 package store
 
-import com.sychev.kmp_sample.core.domain.store.Intent
+import com.sychev.kmp_sample.core.domain.store.intent.Intent
 
 sealed class NewsIntent : Intent
 

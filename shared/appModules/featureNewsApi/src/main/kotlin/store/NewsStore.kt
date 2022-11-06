@@ -1,8 +1,8 @@
 package store
 
-import com.sychev.kmp_sample.core.domain.store.EffectTree
+import com.sychev.kmp_sample.core.domain.store.effect.EffectTree
 import com.sychev.kmp_sample.core.domain.store.Store
-import com.sychev.kmp_sample.core.domain.store.buildEffects
+import com.sychev.kmp_sample.core.domain.store.effect.buildEffects
 import com.sychev.kmp_sample.core.models.Article
 import domain.interactors.GetNews
 import kotlinx.coroutines.flow.MutableStateFlow
