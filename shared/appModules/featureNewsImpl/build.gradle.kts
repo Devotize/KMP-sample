@@ -1,9 +1,9 @@
 plugins {
-    kotlin(Plugins.jvm)
+    kotlin("jvm")
 }
 
 dependencies {
-    api(project(BuildModules.featureNewsApi))
+    api(projects.featureNewsApi)
 
-    implementation(project(BuildModules.featureBackendApi))
+    implementation(projects.featureBackendApi)
 }

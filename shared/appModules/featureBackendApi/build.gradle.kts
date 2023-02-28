@@ -1,10 +1,11 @@
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    kotlin(Plugins.jvm)
-    kotlin(Plugins.kotlinXSerialization) version Versions.kotlinSerialization
+    kotlin("jvm")
+    kotlin("plugin.serialization") version libs.versions.kotlinSerializationVersion.get()
 }
 
 dependencies {
-    api(project(BuildModules.core))
-    api(MultiplatformDependencies.ktorResources)
+    api(projects.core)
+    api(libs.ktorResources)
 
 }

@@ -1,9 +1,9 @@
 plugins {
-    kotlin(Plugins.jvm)
+    kotlin("jvm")
 }
 
 dependencies {
-    api(MultiplatformDependencies.coroutinesCore)
-    api(MultiplatformDependencies.koinCore)
-    api(MultiplatformDependencies.kotlinxSerialization)
+    api(libs.coroutinesCore)
+    api(libs.koinCore)
+    api(libs.kotlinxSerialization)
 }

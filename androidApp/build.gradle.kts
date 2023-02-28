@@ -1,18 +1,16 @@
 @file:Suppress("UnstableApiUsage")
 
 plugins {
-    id(Plugins.androidApplication)
-    kotlin(Plugins.android)
+    id("android-app-convention")
+    id("com.android.application")
+    kotlin("android")
 }
 
 android {
-    compileSdk = AndroidSdk.compileSdk
     defaultConfig {
         applicationId = "com.sychev.kmp_sample.android"
-        minSdk = AndroidSdk.minSdk
-        targetSdk = AndroidSdk.targetSdk
-        versionCode = AndroidSdk.versionCode
-        versionName = AndroidSdk.vesrionName
+        versionCode = Integer.parseInt(project.property("VERSION_CODE") as String)
+        versionName = project.property("VERSION_NAME") as String
     }
     packagingOptions {
         resources {
@@ -21,11 +19,6 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
 
-    }
-    buildTypes {
-        getByName("release") {
-            isMinifyEnabled = false
-        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -38,26 +31,28 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Versions.kotlinKompiler
+        kotlinCompilerExtensionVersion = libs.versions.kotlinKompilerVersion.get()
     }
 }
 
 dependencies {
-    api(project(BuildModules.shared))
+    api(projects.shared)
 
-    implementation(AndroidDependencies.androidCore)
-    implementation(AndroidDependencies.material)
+    implementation(libs.androidCore)
+    implementation(libs.material)
+    implementation(libs.koinAndroid)
+    implementation(libs.koinCompose)
 
-    implementation(AndroidDependencies.koinAndroid)
-    implementation(AndroidDependencies.koinCompose)
+    implementation(libs.composeUI)
+    implementation(libs.composeMaterial)
+    implementation(libs.composeMaterial3)
+    implementation(libs.composeActivity)
+    implementation(libs.composeToolingPreview)
+    implementation(libs.composeRuntime)
+    implementation(libs.composeUtil)
+    implementation(libs.coilCompose)
+    implementation(projects.featureNewsApi)
 
-    implementation(AndroidDependencies.composeUI)
-    implementation(AndroidDependencies.composeMaterial)
-    implementation(AndroidDependencies.composeMaterial3)
-    implementation(AndroidDependencies.composeActivity)
-    implementation(AndroidDependencies.composeToolingPreview)
-    implementation(AndroidDependencies.composeRuntime)
-    implementation(AndroidDependencies.composeUtil)
-    debugImplementation(AndroidDependencies.composeTooling)
+    debugImplementation(libs.composeTooling)
 
 }

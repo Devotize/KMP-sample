@@ -5,8 +5,9 @@ buildscript {
         maven("https://plugins.gradle.org/m2/")
     }
     dependencies {
-        classpath(Plugins.gradle)
-        classpath(Plugins.kotlin)
+        classpath(libs.androidGradlePlugin)
+        classpath(libs.kotlinGradlePlugin)
+        classpath(":build-logic")
     }
 }
 

@@ -2,8 +2,6 @@
 /.gradle/
 /androidApp/build/
 /androidApp/build/intermediates/javac/debug/classes/
-/buildSrc/.gradle/
-/buildSrc/build/
 /desktopApp/build/
 /shared/build/
 /shared/appModules/featureBackendApi/build/

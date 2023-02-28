@@ -1,7 +1,7 @@
 plugins{
-    kotlin(Plugins.jvm)
+    kotlin("jvm")
 }
 
 dependencies {
-    api(project(BuildModules.core))
+    api(projects.core)
 }

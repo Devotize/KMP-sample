@@ -1,6 +1,7 @@
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    kotlin(Plugins.jvm)
-    id(Plugins.compose) version Versions.composeDesktop
+    kotlin("jvm")
+    id("org.jetbrains.compose") version libs.versions.composeDesktopVersion.get()
 }
 
 compose.desktop {
@@ -11,5 +12,5 @@ compose.desktop {
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    api(project(BuildModules.shared))
+    api(projects.shared)
 }
