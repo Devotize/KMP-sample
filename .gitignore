@@ -6,4 +6,6 @@
 /shared/build/
 /shared/appModules/featureBackendApi/build/
 /shared/appModules/featureBackendApi/src/main/kotlin/com/sychev/kmp_sample/backend/api/utils/api_key/
-iosApp/iosApp.xcodeproj/project.xcworkspace/xcuserdata/
+/iosApp/iosApp.xcodeproj/project.xcworkspace/xcuserdata/
+/build-logic/build
+/build-logic/.gradle

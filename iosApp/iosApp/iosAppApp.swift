@@ -2,7 +2,7 @@
 //  iosAppApp.swift
 //  iosApp
 //
-//  Created by Denis Sychev on 28.02.2023.
+//  Created by Denis Sychev on 01.03.2023.
 //
 
 import SwiftUI
