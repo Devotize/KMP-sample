@@ -12,5 +12,4 @@ compose.desktop {
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    api(projects.shared)
 }

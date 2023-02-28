@@ -1,5 +1,9 @@
-plugins{
-    kotlin("jvm")
+plugins {
+    id("multiplatform-library-convention")
+}
+
+android {
+    namespace = "com.sychev.feature.news.api"
 }
 
 dependencies {

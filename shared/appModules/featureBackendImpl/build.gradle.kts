@@ -1,11 +1,10 @@
 plugins {
-//    id("multiplatform-library-convention")
-    kotlin("jvm")
+    id("multiplatform-library-convention")
 }
 
-//android {
-//    namespace = "com.sychev.feature.backend.impl"
-//}
+android {
+    namespace = "com.sychev.feature.backend.impl"
+}
 
 dependencies {
     implementation(projects.featureBackendApi)

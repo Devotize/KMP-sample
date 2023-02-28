@@ -1,7 +1,11 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    kotlin("jvm")
+    id("multiplatform-library-convention")
     kotlin("plugin.serialization") version libs.versions.kotlinSerializationVersion.get()
+}
+
+android {
+    namespace = "com.sychev.feature.backend.api"
 }
 
 dependencies {
