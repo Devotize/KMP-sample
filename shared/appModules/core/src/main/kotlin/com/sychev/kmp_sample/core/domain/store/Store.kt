@@ -7,6 +7,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelChildren
+import kotlinx.coroutines.launch
 
 abstract class Store<I : Intent, S : State> {
 
@@ -18,11 +19,13 @@ abstract class Store<I : Intent, S : State> {
 
     protected abstract val effectTree: EffectTree
 
-    suspend fun send(intent: Intent) {
-        effectTree.effects
-            .first { effect ->
-                effect.intent == intent
-            }.action.invoke()
+    fun send(intent: Intent) {
+        storeScope.launch {
+            effectTree.effects
+                .first { effect ->
+                    effect.intent == intent
+                }.action.invoke()
+        }
     }
 
     protected fun onCleared() {

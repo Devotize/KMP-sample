@@ -1,7 +1,7 @@
 object Versions {
     const val gradle = "7.2.2"
     const val kotlin = "1.7.10"
-    const val compose = "1.3.0-beta03"
+    const val compose = "1.3.1"
     const val kotlinKompiler = "1.3.1"
 
     //android

@@ -55,8 +55,9 @@ dependencies {
     implementation(AndroidDependencies.composeMaterial)
     implementation(AndroidDependencies.composeMaterial3)
     implementation(AndroidDependencies.composeActivity)
-    implementation(AndroidDependencies.composeTooling)
+    implementation(AndroidDependencies.composeToolingPreview)
     implementation(AndroidDependencies.composeRuntime)
     implementation(AndroidDependencies.composeUtil)
+    debugImplementation(AndroidDependencies.composeTooling)
 
 }
