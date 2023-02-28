@@ -7,3 +7,4 @@
 /desktopApp/build/
 /shared/build/
 /shared/FeatureBackendApi/build/
+/shared/FeatureBackendApi/src/main/kotlin/com/sychev/kmp_sample/backend/api/utils/api_key/
