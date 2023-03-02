@@ -22,8 +22,8 @@ import coil.compose.AsyncImage
 import com.sychev.kmp_sample.core.models.Article
 import com.sychev.kmp_sample.shared.design.Dimens
 import org.koin.androidx.compose.get
-import store.LoadNews
-import store.NewsStore
+import com.api.feature.news.store.LoadNews
+import com.api.feature.news.store.NewsStore
 
 @Composable
 fun NewsScreen(

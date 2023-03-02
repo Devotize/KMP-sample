@@ -1,8 +1,8 @@
 package com.sychev.kmp_sample.shared.di
 
 import org.koin.core.KoinApplication
-import org.koin.dsl.KoinAppDeclaration
+import org.koin.core.module.Module
 
 expect class KoinSetup {
-    fun initKoin(appDeclaration: KoinAppDeclaration = {}): KoinApplication
+    fun initKoin(modules: List<Module> = emptyList()): KoinApplication
 }
