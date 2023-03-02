@@ -7,7 +7,7 @@ android {
 }
 
 dependencies {
-    api(projects.featureNewsApi)
+    api(projects.shared.appModules.featureNewsApi)
 
-    implementation(projects.featureBackendApi)
+    implementation(projects.shared.appModules.featureBackendApi)
 }

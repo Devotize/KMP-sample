@@ -9,7 +9,7 @@ android {
 }
 
 dependencies {
-    api(projects.core)
+    api(projects.shared.appModules.core)
     api(libs.ktorResources)
 
 }

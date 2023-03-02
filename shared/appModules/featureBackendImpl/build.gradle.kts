@@ -7,7 +7,7 @@ android {
 }
 
 dependencies {
-    implementation(projects.featureBackendApi)
+    implementation(projects.shared.appModules.featureBackendApi)
 
     implementation(libs.koinCore)
 

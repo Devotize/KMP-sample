@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  iosApp
 //
-//  Created by Denis Sychev on 01.03.2023.
+//  Created by Denis Sychev on 02.03.2023.
 //
 
 import SwiftUI

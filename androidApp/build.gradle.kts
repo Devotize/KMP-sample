@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    api(projects.shared.appModules.core)
     api(projects.shared)
 
     implementation(libs.androidCore)
@@ -51,7 +52,7 @@ dependencies {
     implementation(libs.composeRuntime)
     implementation(libs.composeUtil)
     implementation(libs.coilCompose)
-    implementation(projects.featureNewsApi)
+    implementation(projects.shared.appModules.featureNewsApi)
 
     debugImplementation(libs.composeTooling)
 

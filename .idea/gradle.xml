@@ -26,6 +26,7 @@
             <option value="$PROJECT_DIR$/build-logic" />
             <option value="$PROJECT_DIR$/desktopApp" />
             <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/shared/appModules" />
             <option value="$PROJECT_DIR$/shared/appModules/core" />
             <option value="$PROJECT_DIR$/shared/appModules/featureBackendApi" />
             <option value="$PROJECT_DIR$/shared/appModules/featureBackendImpl" />
